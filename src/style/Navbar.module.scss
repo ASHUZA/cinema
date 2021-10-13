@@ -1,0 +1,104 @@
+@import "../style/colors.scss";
+
+.navigation {
+    background-color: $darkColor;
+    padding: 1% 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 99;
+    width: 90%;
+    right: 0;
+    top: 0;
+    border-bottom: 1px solid #000;
+
+    @media (max-width: 770px) {
+        width: 100%;
+        overflow: hidden;
+
+    }
+
+    .logo {
+        display: none;
+
+        @media (max-width: 770px) {
+            display: unset;
+            margin-left: 10%;
+
+        }
+    }
+
+    div {
+        width: 60%;
+        display: flex;
+        justify-content: space-around;
+
+        @media (max-width: 770px) {
+            width: 100%;
+            justify-content: space-between;
+        }
+
+        input {
+            width: 80%;
+            border-radius: 10px;
+            border: none;
+            background: $grayColor;
+            padding: 0.5%;
+            color: $whiteColor;
+            text-align: left;
+            padding: 1% 4%;
+
+            &:focus {
+                outline: unset;
+            }
+
+            &::placeholder {
+                text-align: center;
+                font-size: 15px;
+                color: $whiteColor;
+                font-family: 'Saira',
+                    sans-serif;
+                font-weight: 200;
+            }
+        }
+
+        a.search_button {
+            display: unset;
+        }
+
+        a {
+            display: none;
+
+            @media (max-width: 770px) {
+                display: unset;
+            }
+        }
+
+        h4 {
+            display: none;
+
+            @media (max-width: 770px) {
+                display: unset;
+            }
+        }
+
+        button {
+            padding: 0.3% 1.9%;
+            border: none;
+            border-radius: 5px;
+            background: $yelloColor;
+        }
+
+    }
+
+
+    span {
+        color: $whiteColor;
+        font-weight: 500;
+        font-family: 'Saira',
+            sans-serif;
+        font-size: 1.2em;
+        margin-left: 3%;
+    }
+}

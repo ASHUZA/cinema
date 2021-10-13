@@ -1,0 +1,124 @@
+@import "../style/colors.scss";
+
+div.footer {
+    background: #000;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    width: auto;
+    margin-top: 10%;
+    padding: 3%;
+
+    .footer__partenaria {
+        width: 280px;
+        padding: 3%;
+
+
+        h3 {
+            font-size: 1em;
+            font-family: 'Saira', sans-serif;
+            font-size: 20px;
+            font-weight: 700;
+            color: $yelloColor;
+            text-align: center;
+        }
+
+        p {
+            font-family: 'Saira', sans-serif;
+            font-weight: 300;
+            font-size: 15px;
+            color: $whiteColor;
+            text-align: justify;
+        }
+
+        .footer__partenaria__logos {
+            display: flex;
+            justify-content: space-evenly;
+
+            img {
+                width: 20%;
+                height: 10% !important;
+
+            }
+        }
+    }
+
+    .footer__agenceInfo {
+        margin-top: -3%;
+        width: 380px;
+        padding: 3%;
+
+        display: flex;
+        flex-direction: column;
+        justify-items: space-between;
+
+        img {
+            width: 30%;
+            height: 20%;
+            margin-bottom: 4%;
+            align-self: center;
+        }
+
+        h3 {
+            font-size: 1em;
+            font-family: 'Saira',
+                sans-serif;
+            font-size: 20px;
+            font-weight: 700;
+            color: $whiteColor;
+            text-align: center;
+        }
+
+        p {
+            color: $whiteColor;
+            font-family: 'Saira', sans-serif;
+            font-weight: 400;
+            font-size: 15px;
+            text-align: justify;
+        }
+
+        .footer__agenceInfo__contact {
+            display: flex;
+            justify-content: space-evenly;
+
+            img {
+                width: 10%;
+                margin: 2% 10%;
+            }
+        }
+    }
+
+    .mediaInfo {
+        width: 280px;
+        padding: 3%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h3 {
+            font-size: 1em;
+            font-family: 'Saira', sans-serif;
+            font-size: 20px;
+            font-weight: 700;
+            color: $whiteColor;
+            text-align: center;
+        }
+
+        p {
+            font-family: 'Saira', sans-serif;
+            font-weight: 300;
+            color: $whiteColor;
+            font-size: 15px;
+            text-align: justify;
+        }
+
+        span {
+            text-align: center;
+            font-family: 'Saira', sans-serif;
+            font-weight: bolder;
+            font-size: 2em;
+            color: $whiteColor;
+        }
+    }
+}
